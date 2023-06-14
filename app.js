@@ -50,8 +50,8 @@ generate.addEventListener('click', () => {
 checkButton.addEventListener('click', () => {
   let numberGuessed = Number(guessed_number.value);
   if (score <= 1) {
-    result.textContent = `You lost this game😞...
-     generate new and start again⛔`
+    result.innerHTML = "You lost this game😞...<br>  Generate new and start again⛔   "
+
     checkButton.disabled = true;
     gameLost(true);
     scoreBoard.textContent = 0;
@@ -72,7 +72,7 @@ checkButton.addEventListener('click', () => {
       scoreBoard.textContent = score;
 
     } else if (numberGuessed === generated) {
-      result.innerHTML = `Correct. Your Score is , ${score}💥. Generate new and start Again😀`;
+      result.innerHTML = `Correct. Your Score is , ${score}💥.<br> Generate new and start Again😀`;
       checkButton.disabled = true;
       gameWin();
 
