@@ -80,9 +80,16 @@ body {
   font-size: 1.5rem;
 }
 
+.resultDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .result {
   padding: 10px;
   border-radius: 10px;
+  width: fit-content;
 }
 
 @media (max-width: 768px) {
