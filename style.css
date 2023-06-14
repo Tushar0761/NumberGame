@@ -84,3 +84,32 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
+
+@media (max-width:600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .head {
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .game {
+    font-size: 1rem;
+  }
+
+  #Generate,
+  #check {
+    font-size: 1rem;
+  }
+
+
+  #guess {
+    font-size: 1rem;
+  }
+
+
+}
