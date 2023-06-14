@@ -7,8 +7,7 @@ const scoreBoard = document.querySelector('.current_score');
 const guess = document.querySelector('.guess')
 let score = 10;
 let generated;
-let checkShow = false
-// let win = false
+let checkShow = false;
 
 function scoreColor(winColor) {
   scoreBoard.style.color = winColor;
@@ -42,7 +41,6 @@ generate.addEventListener('click', () => {
 
   if (!checkShow) {
     guess.style.display = 'block'
-
   }
 
 })
@@ -60,6 +58,8 @@ checkButton.addEventListener('click', () => {
 
     if (!numberGuessed) {
       result.textContent = "Please Enter Number.❓"
+    } else if (numberGuessed > 10) {
+      result.textContent = "Please guess between 1-10.❓"
     }
     else if (numberGuessed > generated) {
       result.textContent = "Your number is Big.😐"
